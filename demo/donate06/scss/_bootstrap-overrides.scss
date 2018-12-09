@@ -1,31 +1,31 @@
-.bg-primary {
-  background-color: $primary !important;
+// Bootstrap overrides for this template
+.text-primary {
+  color: $primary !important;
+}
+
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 300px;
+  @include sans-serif-font;
+}
+
+.btn-xl {
+  padding: 1rem 2rem;
 }
 
 .btn-primary {
   background-color: $primary;
   border-color: $primary;
-  &:active,
+  &:hover,
   &:focus,
-  &:hover {
-    background-color: darken($primary, 10%) !important;
-    border-color: darken($primary, 10%) !important;
+  &:active {
+    color: $white;
+    background-color: darken($primary, 5%) !important;
   }
-  &:focus {
-    box-shadow: 0 0 0 0.2rem fade-out($primary, 0.5);
-  }
-}
-
-.btn-secondary {
-  background-color: $secondary;
-  border-color: $secondary;
   &:active,
-  &:focus,
-  &:hover {
-    background-color: darken($secondary, 10%) !important;
-    border-color: darken($secondary, 10%) !important;
-  }
   &:focus {
-    box-shadow: 0 0 0 0.2rem fade-out($secondary, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(240, 95, 64,.5) !important;
   }
 }

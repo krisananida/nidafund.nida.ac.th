@@ -1,0 +1,8 @@
+
+# no nasty crackers in here!
+order deny,allow
+deny from all
+allow from 10.10.0.0/16
+#allow from 172.18.0.0/16
+# this would do the same thing..
+#allow from 192.168.0

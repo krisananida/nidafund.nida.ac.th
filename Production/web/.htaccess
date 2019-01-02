@@ -1,0 +1,7 @@
+Options -indexes
+
+RewriteEngine On
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+Redirect /index.html https://nidafund.nida.ac.th/main/
